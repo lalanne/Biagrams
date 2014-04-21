@@ -1,4 +1,4 @@
 Biagrams
 ========
 
-Biagrams exerciese
+Biagrams exercise

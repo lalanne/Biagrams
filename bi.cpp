@@ -69,7 +69,7 @@ int main(int argc, const char *argv[]){
     string file_name(argv[1]);
 
     StreamImporter import_file;
-    auto tokens =  import_file(file_name);
+    Tokens tokens =  import_file(file_name);
     auto biagrams = store_biagrams(tokens);
     show_in_order(biagrams);
     show_biagram_numbers(biagrams);

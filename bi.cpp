@@ -1,4 +1,6 @@
 
+#include "Tokens.hpp"
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -9,22 +11,7 @@
 
 using namespace std;
 
-class Tokens{
-    public:
-        Tokens(istringstream& iss):tokens{istream_iterator<string>{iss}, istream_iterator<string>{}}{}
 
-        vector<string>::iterator begin(){
-            return tokens.begin();
-        }
-
-        vector<string>::iterator end(){
-            return tokens.end();
-        }
-
-    private:
-        vector<string> tokens;
-
-};
 
 struct StreamImporter{
     Tokens operator()(string file_name){
